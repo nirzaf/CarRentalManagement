@@ -1,0 +1,62 @@
+﻿@page "/vehicles/"
+@attribute [Authorize]
+    <HeadingComponent Text="Vehicles" />
+
+    <br />
+
+    <a href="/vehicles/create" class="btn btn-secondary">
+        <span class="oi oi-plus"></span>
+        Create New Vehicle
+    </a>
+    <br />
+    <br />
+
+    @if (Vehicles == null)
+    {
+        <div class="alert alert-info">Loading Vehicles...</div>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Daily Rate</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var vehicle in Vehicles)
+                {
+                    <tr>
+                        <td><img src="@vehicle.ImageName" style="height: 150px; width: 150px"/></td>
+                        <td>@vehicle.Make.Name</td>
+                        <td>@vehicle.Model.Name</td>
+                        <td>@vehicle.Year</td>
+                        <td>@vehicle.RentalRate</td>
+                        <td>
+                            <a href="/vehicles/view/@vehicle.Id" class="btn btn-primary">
+                                <span class="oi oi-book"></span>
+                            </a>
+                            <a href="/vehicles/edit/@vehicle.Id" class="btn btn-warning">
+                                <span class="oi oi-pencil"></span>
+                            </a>
+                            <button class="btn btn-danger" @onclick="@(()=>Delete(vehicle.Id))">
+                                <span class="oi oi-delete"></span>
+                            </button>
+
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    }
+    
+
+    @code {
+        
+    }
