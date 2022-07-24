@@ -1,15 +1,15 @@
 # CarRentalManagement-Blazor-WASM
-.NET Core 5 Hotel Listing Web API for [Modern Web Development with Blazor and .NET Core 5](https://www.udemy.com/course/modern-web-development-with-blazor-and-net-core-5/?referralCode=0D5022F28FC4D76B51FD)
+.NET 6 Hotel Listing Web API 
 
-An Educational ASP.NET Core Hosted Blazor WebAssembly application built using .NET Core 5.0 
+An ASP.NET Core Hosted Blazor WebAssembly application built using .NET 6.0 
 
 By doing this course, you will:
 <ul>
     <li>
-        Build A Strong Foundation in .NET 5 Programming With Blazor:
+        Build A Strong Foundation in .NET 6 Programming With Blazor:
     </li>
     <li>
-        Build a Single Page Application client side UI using Blazor and .NET 5
+        Build a Single Page Application client side UI using Blazor and .NET 6
     </li>
     <li>
         Design a Database Using Entity Framework Core
@@ -53,4 +53,4 @@ By doing this course, you will:
     <li>    Deploy Applications and Database to Microsoft Azure</li>
 </ul>
 
-Website: [Trevoir Williams | Blog](http://bit.ly/2ux9hcn)
+

@@ -1,5 +1,4 @@
-﻿using CarRentalManagement.Client.Pages;
-using CarRentalManagement.Shared.DocumentModels;
+﻿using CarRentalManagement.Shared.DocumentModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Caching.Memory;
